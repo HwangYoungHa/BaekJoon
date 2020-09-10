@@ -3,10 +3,10 @@
 # define max 210000000
 
 int main(){
-	double a, b, c; // a : °íÁ¤ºñ¿ë, b : °¡º¯ºñ¿ë(Á¦ÀÛºñ), c : ÆÇ¸Å°¡ 
+	double a, b, c; // a : ê³ ì •ë¹„ìš©, b : ê°€ë³€ë¹„ìš©(ì œìž‘ë¹„), c : íŒë§¤ê°€ 
 	double cost, revenue;
 	scanf("%d %d %d", &a, &b, &c);
-	int n = 1; // ÆÇ¸Å ´ë¼ö 
+	int n = 1; // íŒë§¤ ëŒ€ìˆ˜ 
 	
 	if(b >= c){
 		printf("-1");
