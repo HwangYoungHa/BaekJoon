@@ -6,13 +6,13 @@ int main(){
 	int spel[27] = {0, };
 	int i = 0;
 	char word[MAX];
-	int max = -1, index = -1; // ÃÖ´Ùºóµµ ¾ËÆÄºª, Áßº¹¿©ºÎ È®ÀÎ 
+	int max = -1, index = -1; // ìµœë‹¤ë¹ˆë„ ì•ŒíŒŒë²³, ì¤‘ë³µì—¬ë¶€ í™•ì¸ 
 	scanf("%s", &word);
 	
-	while(word[i] != '\0'){ // ¾ËÆÄºªº° ºóµµ¼ö È®ÀÎ 
-		if(97 <= word[i] && word[i] < 123) // ¼Ò¹®ÀÚÀÏ °æ¿ì 
+	while(word[i] != '\0'){ // ì•ŒíŒŒë²³ë³„ ë¹ˆë„ìˆ˜ í™•ì¸ 
+		if(97 <= word[i] && word[i] < 123) // ì†Œë¬¸ìì¼ ê²½ìš° 
 			spel[word[i]-97]++;
-		else if (65 <= word[i] && word[i] < 91) // ´ë¹®ÀÚÀÏ °æ¿ì 
+		else if (65 <= word[i] && word[i] < 91) // ëŒ€ë¬¸ìì¼ ê²½ìš° 
 			spel[word[i]-65]++;
 		else
 			break; 
@@ -20,11 +20,11 @@ int main(){
 	}
 	
 	for(i=0; i<27; i++){
-		if(max < spel[i]){ // ÃÖ´Ùºóµµ È®ÀÎ 
+		if(max < spel[i]){ // ìµœë‹¤ë¹ˆë„ í™•ì¸ 
 			max = spel[i];
 			index = i;
 		}
-		else if(max == spel[i]) // Áßº¹ Á¸Àç 
+		else if(max == spel[i]) // ì¤‘ë³µ ì¡´ì¬ 
 			index = -1;
 	}
 	
