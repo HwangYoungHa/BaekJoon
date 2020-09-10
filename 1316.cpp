@@ -3,11 +3,11 @@
 int main(){
 	int n;
 	char word[100];
-	scanf("%d", &n); // textÈ½¼ö ÀÔ·Â 
+	scanf("%d", &n); // textíšŸìˆ˜ ìž…ë ¥ 
 	int check=n;
 	
 	for(int i=0; i<n; i++){
-		scanf("%s", &word); // ´Ü¾î ÀÔ·Â 
+		scanf("%s", &word); // ë‹¨ì–´ ìž…ë ¥ 
 		if(sizeof(word) == 1)
 			continue;
 		int count[27]={0, };
@@ -21,14 +21,14 @@ int main(){
 			count[index]++;
 			if(count[index] >= 2){
 				check--;
-				//printf("%s ºÒ°¡´É!\n", word);
+				//printf("%s ë¶ˆê°€ëŠ¥!\n", word);
 				break;
 			}
 			j++;
 		}
 	}
 	
-	printf("%d", check); // °á°ú Ãâ·Â 
+	printf("%d", check); // ê²°ê³¼ ì¶œë ¥ 
 	
 	return 0;
 }
