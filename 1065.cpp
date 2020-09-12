@@ -4,7 +4,7 @@ int hansu(int n){
 	int arr[3]={0, };
 	int i=0;
 	
-	if(n < 100){ // 100 �̸� 
+	if(n < 100){ // 100 ¹Ì¸¸ 
 		return 1;
 	}
 	else if(n == 1000)
