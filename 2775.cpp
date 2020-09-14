@@ -1,7 +1,7 @@
 #include <cstdio>
 
 void apt(){
-	int k, n; // k : Ãþ, n : È£¼ö 
+	int k, n; // k : ì¸µ, n : í˜¸ìˆ˜ 
 	int high[14]={0, }, low[14]={0, };
 	scanf("%d", &k);
 	scanf("%d", &n);
@@ -9,20 +9,20 @@ void apt(){
 	for(int i=0; i<14; i++)
 		low[i]=(i+1);
 	
-	if(k == 0){ // Ãþ¼ö°¡ 0ÃþÀÏ °æ¿ì 
+	if(k == 0){ // ì¸µìˆ˜ê°€ 0ì¸µì¼ ê²½ìš° 
 		printf("%d\n", low[n+1]);
 		return;
 	}
 	
-	for(int i=0; i<k; i++) { // Ãþ¼ö 
-		for(int j=0; j<n; j++){ // È£¼ö 
+	for(int i=0; i<k; i++) { // ì¸µìˆ˜ 
+		for(int j=0; j<n; j++){ // í˜¸ìˆ˜ 
 			if(j == 0) 
 				high[j] = 1;
 			else{
 				high[j] = high[j-1] + low[j];
 			}
 		}
-		for(int j=0; j<n; j++){ // º¹»ç 
+		for(int j=0; j<n; j++){ // ë³µì‚¬ 
 			low[j] = high[j];
 			high[j] = 0;
 		}
