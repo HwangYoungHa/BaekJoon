@@ -1,10 +1,12 @@
 #include <cstdio>
 
+// Í≥ÑÏÜç ÏãúÍ∞ÑÏ¥àÍ≥ºÍ∞Ä ÎÇúÎã§....
+
 void space(){
 	long long x, y, ans;
 	scanf("%d %d", &x, &y);
 	long long dist = (y-x);
-	long long a, n=1; // a : ∞≈∏Æ¿« ±‚¡ÿ 
+	long long a, n=1; // a : Í±∞Î¶¨Ïùò Í∏∞Ï§Ä 
 	
 	while(1){
 		a = n*(n-1)+1;
@@ -13,7 +15,7 @@ void space(){
 		n++;
 	}
 	
-	if(dist - a < n*(n+1)+1 - dist) // ¿€¿∫∞≈ø° ¥ı ∞°±ÓøÚ 
+	if(dist - a < n*(n+1)+1 - dist) // ÏûëÏùÄÍ±∞Ïóê Îçî Í∞ÄÍπåÏõÄ 
 		ans = n*2-1;
 	else
 		ans = n*2;
