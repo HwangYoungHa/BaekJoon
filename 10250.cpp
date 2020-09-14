@@ -6,9 +6,9 @@ void hotel(){
 	int floor, num;
 	scanf("%d %d %d", &h, &w, &n);
 	
-	num = n / h; // È£¼ö 
+	num = n / h; // ÃˆÂ£Â¼Ã¶ 
 	
-	if(n % h == 0) // ²À´ë±âÃþ 
+	if(n % h == 0) // Â²Ã€Â´Ã«Â±Ã¢ÃƒÃ¾ 
 		floor = h;
 	else{
 		floor = n % h;
