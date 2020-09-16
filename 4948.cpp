@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <cmath>
 
-// cout, cinº¸´Ù printf, scanf°¡ ´õ ºü¸£´Ù! 
+// cout, cinÂºÂ¸Â´Ã™ printf, scanfÂ°Â¡ Â´Ãµ ÂºÃ¼Â¸Â£Â´Ã™! 
 
 int prime(int n){
 	if(n<=1)
