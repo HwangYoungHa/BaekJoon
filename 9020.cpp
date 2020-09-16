@@ -1,9 +1,9 @@
 #include <cstdio>
 #include <cmath>
 
-// cout, cinº¸´Ù printf, scanf°¡ ´õ ºü¸£´Ù! 
+// cout, cinë³´ë‹¤ printf, scanfê°€ ë” ë¹ ë¥´ë‹¤! 
 
-int prime(int n){ // ¼Ò¼ö ±¸ÇÏ±â 
+int prime(int n){ // ì†Œìˆ˜ êµ¬í•˜ê¸° 
 	if(n<=1)
 		return 0;
 	for(int i=2; i<=sqrt(n); i++){
