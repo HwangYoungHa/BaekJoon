@@ -1,6 +1,6 @@
 #include <cstdio>
 #include <cmath>
-#define _USE_MATH_DEFINES // 3.141592 »ç¿ë½Ã Æ²¸².... 
+#define _USE_MATH_DEFINES // 3.141592 Â»Ã§Â¿Ã«Â½Ãƒ Ã†Â²Â¸Â².... 
 
 using namespace std;
 
