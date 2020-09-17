@@ -13,7 +13,7 @@ int terrat(){
 		return 1;
 	else{ // d < r1 + r2
 		if(d == 0){
-			if(r1 == r2) // ¿ÏÀü µ¿ÀÏ
+			if(r1 == r2) // Â¿ÃÃ€Ã¼ ÂµÂ¿Ã€Ã
 				return -1;
 			else
 				return 0; 
