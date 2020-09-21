@@ -3,7 +3,7 @@
 
 int cnt=0;
 
-void hanoi(int n, int x, int y, int z){ // x¿¡¼­ y¸¦ ÀÌ¿ë, z·Î ÀÌµ¿ 
+void hanoi(int n, int x, int y, int z){ // xì—ì„œ yë¥¼ ì´ìš©, zë¡œ ì´ë™ 
 	cnt++;
 	if(n==0)
 		return;
@@ -19,6 +19,6 @@ int main(){
 	scanf("%d", &n);
 	m = pow(2, n)-1;
 	printf("%d\n", m);
-	hanoi(n, 1, 2, 3); // n°³¸¦ 1¿¡¼­ 3À¸·Î ¿Å±è 
+	hanoi(n, 1, 2, 3); // nê°œë¥¼ 1ì—ì„œ 3ìœ¼ë¡œ ì˜®ê¹€ 
 	return 0;
 }
