@@ -5,9 +5,9 @@ int big[50][2]={0, };
 
 void check(int n){
 	int k;
-	for(int i=0; i<n; i++){ // º»ÀÎ 
+	for(int i=0; i<n; i++){ // ÂºÂ»Ã€ÃŽ 
 		k=1;
-		for(int j=0; j<n; j++){ // ºñ±³´ë»ó 
+		for(int j=0; j<n; j++){ // ÂºÃ±Â±Â³Â´Ã«Â»Ã³ 
 			if(i == j)
 				continue;
 			if(big[i][0] < big[j][0] && big[i][1] < big[j][1])
