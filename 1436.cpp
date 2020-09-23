@@ -14,11 +14,11 @@ int main(){
 	while(num++){
 		temp = num;
 		while(temp){
-			if(temp % 1000 == 666){ // 666¼ıÀÚ ¹ß°ß 
+			if(temp % 1000 == 666){ // 666ìˆ«ì ë°œê²¬ 
 				cnt++;
 				break;
 			}
-			temp /= 10; // ¹ß°ß ¸øÇÏ¸é 1ÀÇÀÚ¸® ÀÚ¸§ 
+			temp /= 10; // ë°œê²¬ ëª»í•˜ë©´ 1ì˜ìë¦¬ ìë¦„ 
 		}
 		if(cnt == n)
 			break;
