@@ -1,4 +1,4 @@
-//Âü°í : https://sihyungyou.github.io/baekjoon-10989/
+//ì°¸ê³  : https://sihyungyou.github.io/baekjoon-10989/
 #include <cstdio>
 
 using namespace std;
@@ -8,19 +8,19 @@ int main () {
 
     int n, temp, max;
 
-    scanf("%d", &N); // ¹è¿­ÀÇ ±æÀÌ 
+    scanf("%d", &N); // ë°°ì—´ì˜ ê¸¸ì´ 
 
     max = 0;
     for(int i = 0; i < N; i++) {
         scanf("%d", &temp); // input
-        c[temp]++; // input¿¡ ÇØ´çÇÏ´Â index Áõ°¡ 
+        c[temp]++; // inputì— í•´ë‹¹í•˜ëŠ” index ì¦ê°€ 
         if (temp > max)
-			max = temp; // max ±¸ÇÏ±â 
+			max = temp; // max êµ¬í•˜ê¸° 
     }
 
     for (int i = 0; i <= max; i++) {
         for(int j = 0; j < c[i]; j++)
-			printf("%d\n", i); // array cÀÇ index¿¡ ÀÖ´Â °ª¸¸Å­ ¹İº¹ÇÏ¿© Ãâ·Â 
+			printf("%d\n", i); // array cì˜ indexì— ìˆëŠ” ê°’ë§Œí¼ ë°˜ë³µí•˜ì—¬ ì¶œë ¥ 
     }
     return 0;
 }
